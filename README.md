@@ -28,7 +28,7 @@ Then push the repo upstream
 
 That's it, you can now checkout your application at:
 
-    http://jbpmmigration-$your_domain.rhcloud.com/jbpmmigration_upload-0.1
+    http://jbpmmigration-$your_domain.rhcloud.com/jbpmmigration_upload-0.2
 
 USAGE NOTES:
 
