@@ -43,12 +43,12 @@
 
     <profile>
         <subsystem xmlns="urn:jboss:domain:logging:1.0">
-            <!--console-handler name="CONSOLE">
+            <console-handler name="CONSOLE">
                 <level name="INFO"/>
                 <formatter>
                     <pattern-formatter pattern="%d{HH:mm:ss,SSS} %-5p [%c] (%t) %s%E%n"/>
                 </formatter>
-            </console-handler-->
+            </console-handler>
 
             <periodic-rotating-file-handler name="FILE">
                 <level name="INFO"/>
@@ -72,7 +72,7 @@
             <root-logger>
                 <level name="INFO"/>
                 <handlers>
-                    <!--handler name="CONSOLE"/-->
+                    <handler name="CONSOLE"/>
                     <handler name="FILE"/>
                 </handlers>
             </root-logger>
@@ -91,12 +91,12 @@
                     <timeout></timeout>
                     <statement></statement>
                 </datasource>
-                <datasource jndi-name="java:jboss/datasources/MysqlDS" enabled="${mysql.enabled}" use-java-context="true" pool-name="MysqlDS">
-                    <connection-url>jdbc:mysql://${OPENSHIFT_DB_HOST}:${OPENSHIFT_DB_PORT}/${OPENSHIFT_APP_NAME}</connection-url>
+                <datasource jndi-name="java:jboss/datasources/MysqlDS" enabled="false" use-java-context="true" pool-name="MysqlDS">
+                    <connection-url>jdbc:mysql://127.1.29.129:3306/jbpmmigration</connection-url>
                     <driver>mysql</driver>
                     <security>
-                      <user-name>${OPENSHIFT_DB_USERNAME}</user-name>
-                      <password>${OPENSHIFT_DB_PASSWORD}</password>
+                      <user-name>admin</user-name>
+                      <password>changeme</password>
                     </security>
                 </datasource>
                 <drivers>
@@ -184,10 +184,10 @@
 
     <interfaces>
         <interface name="management">
-            <loopback-address value="${OPENSHIFT_INTERNAL_IP}"/>
+            <loopback-address value="127.1.29.129"/>
         </interface>
         <interface name="public">
-            <loopback-address value="${OPENSHIFT_INTERNAL_IP}"/>
+            <loopback-address value="127.1.29.129"/>
         </interface>
     </interfaces>
 
