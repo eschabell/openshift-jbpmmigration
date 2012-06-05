@@ -11,9 +11,9 @@ Running on OpenShift
 
 Create an account at http://openshift.redhat.com/
 
-Create a jbossas-7.0 application
+Create a jbossas-7 application
 
-    rhc-create-app -l $username -a jbpmmigration -t jbossas-7.0
+    rhc app create -a jbpmmigration -t jbossas-7
 
 Add this upstream openshift-jbpmmigration repo
 
