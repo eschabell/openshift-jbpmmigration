@@ -16,7 +16,7 @@ Create a jbossas-7 application
 
 That's it, you can now checkout your application at:
 
-    http://jbpmmigration-$your_domain.rhcloud.com/jbpmmigration_upload-0.4
+    http://jbpmmigration-$your_domain.rhcloud.com/jbpmmigration_upload-0.5
 
 USAGE NOTES:
 
