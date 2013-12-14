@@ -12,7 +12,7 @@ Create an account at http://openshift.redhat.com/
 
 Create a jbossas-7 application
 
-    rhc app create -a jbpmmigration -t jbossas-7 --from-code git://github.com/eschabell/openshift-jbpmmigration.git
+    rhc app create -t jbossas-7 --from-code git://github.com/eschabell/openshift-jbpmmigration.git jbpmmigration
 
 That's it, you can now checkout your application at:
 
