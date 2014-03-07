@@ -1,12 +1,12 @@
-jBPM Migration Tooling on OpenShift Express
-============================================
+jBPM Migration Tooling on OpenShift 
+===================================
 Installing the jBPM Migration tool on OpenShift was never easier!
 
 This git repository helps you get up and running quickly with the jBPM
 Migration Tooling.
 
 Running on OpenShift
-----------------------------
+--------------------
 
 Create an account at http://openshift.redhat.com/
 
