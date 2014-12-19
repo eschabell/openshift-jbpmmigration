@@ -5,11 +5,14 @@ Installing the jBPM Migration tool on OpenShift was never easier!
 This git repository helps you get up and running quickly with the jBPM
 Migration Tooling.
 
-Running on OpenShift
---------------------
 
-Create an account at http://openshift.redhat.com/
+Install with one click
+----------------------
+[![Click to install OpenShift](http://launch-shifter.rhcloud.com/launch/light/Click to install.svg)](https://openshift.redhat.com/app/console/application_type/custom?&cartridges[]=jbossas-7&initial_git_url=git@github.com:eschabell/openshift-jbpmmigration.git&name=jbpmmigration)
 
+
+Manual setup on OpenShift
+------------------------- 
 Create a jbossas-7 application
 
     rhc app create jbpmmigration -t jbossas-7 --from-code git://github.com/eschabell/openshift-jbpmmigration.git
